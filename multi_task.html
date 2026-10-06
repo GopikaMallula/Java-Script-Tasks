@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function  addition(){
+         var num1=parseInt(document.getElementById("t1").value);
+        var num2=parseInt(document.getElementById("t2").value);
+        var sum=num1+num2
+        var sum=document.getElementById("t3").value=sum;
+       }
+       function  subtraction(){
+         var num1=parseInt(document.getElementById("t1").value);
+        var num2=parseInt(document.getElementById("t2").value);
+        var sum=num1-num2
+        var sum=document.getElementById("t3").value=sum;
+       }
+        function  multiplication(){
+         var num1=parseInt(document.getElementById("t1").value);
+        var num2=parseInt(document.getElementById("t2").value);
+        var sum=num1*num2
+        var sum=document.getElementById("t3").value=sum;
+       }
+        function  division(){
+         var num1=parseInt(document.getElementById("t1").value);
+        var num2=parseInt(document.getElementById("t2").value);
+        var sum=num1/num2
+        var sum=document.getElementById("t3").value=sum;
+       }
+        function  modulus(){
+         var num1=parseInt(document.getElementById("t1").value);
+        var num2=parseInt(document.getElementById("t2").value);
+        var sum=num1%num2
+        var sum=document.getElementById("t3").value=sum;
+       }
+       function  expo(){
+         var num1=parseInt(document.getElementById("t1").value);
+        var num2=parseInt(document.getElementById("t2").value);
+        var sum=num1**num2
+        var sum=document.getElementById("t3").value=sum;
+       }
+    </script>
+    <style>
+        .container{
+            width: 60%;
+            background-image:linear-gradient(90deg,lavender,rgb(99, 1, 66)) ;
+            border: 2px solid black;
+            text-align: center;
+            height: 350px;
+        }
+        button{
+            margin-top: 30px ;
+            width: 100px;
+            border-radius: 10px;
+            text-align: center;
+
+        }
+        h1{
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="head">Multi task page</h1>
+        <label for="">Enter N1:</label>
+    <input type="text" id="t1">
+    <br><br>
+    <label for="">Enter N2:</label>
+    <input type="text" id="t2">
+    <br><br>
+    <label for="">Result is:</label>
+    <input type="text" id="t3">
+    <br>
+    <br>
+    <button onclick="addition()">ADD</button>
+    <button onclick="subtraction()">SUB</button>
+    <button onclick="multiplication()">MULTI</button>
+    <button onclick="division()">DIVISION</button>
+    <button onclick="modulus()">MODULUS</button>
+    <button onclick="expo()">EXPO</button>
+    </div>
+</body>
+</html>
